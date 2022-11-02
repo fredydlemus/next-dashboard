@@ -12,3 +12,7 @@ type Navigation = {
     href: string;
     current?: boolean;
 }
+
+type EndPoint = {
+    [key: string]: string | ((id: string, limit: string, offset: string) => string);
+}
